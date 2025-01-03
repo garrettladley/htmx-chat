@@ -1,0 +1,20 @@
+package layouts
+
+templ Base() {
+	<!DOCTYPE html>
+	<html lang="en" data-theme="dark">
+		<head>
+			<title>htmx-chat</title>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+			<link rel="stylesheet" href="/public/styles.css"/>
+			<link rel="icon" href="data:,"/>
+			<script src="/deps/htmx-1.9.12.min.js"></script>
+		</head>
+		<body
+			class="antialiased h-screen w-full"
+		>
+			{ children... }
+		</body>
+	</html>
+}

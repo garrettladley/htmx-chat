@@ -1,0 +1,19 @@
+package chat
+
+import "github.com/garrettladley/htmx-chat/internal/views/layouts"
+
+templ Index() {
+	@layouts.Base() {
+		<script src="/deps/sse-1.9.12.min.js"></script>
+		<div class="h-screen w-screen" class="bg-rose-200">
+			<div id="message-container"></div>
+			<div
+				id="sse-listener"
+				hx-ext="sse"
+				sse-connect="/chat"
+				sse-swap="message"
+				hx-target="#message-container"
+			></div>
+		</div>
+	}
+}

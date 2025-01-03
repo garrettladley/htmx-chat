@@ -1,0 +1,11 @@
+.DS_Store
+.env
+bin/
+tmp/
+*_templ.go
+*_templ.txt
+cmd/server/deps/*
+cmd/server/public/*
+node_modules/
+package-lock.json
+package.json
